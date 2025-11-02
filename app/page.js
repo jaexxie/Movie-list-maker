@@ -6,7 +6,7 @@ import AddMovie from "./components/addMovie.js"
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [movie, setMovie] = useState([])
+  const [movie, setMovie] = useState([]);
 
   const [sortAlphaAsc, setSortAlphaAsc] = useState(true);
   const [sortRatingAsc, setSortRatingAsc] = useState(true);
