@@ -1,0 +1,76 @@
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.formSection {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputField,
+.selectField {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.saveButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.movieList {
+  list-style: none;
+  padding: 0;
+  color: black;
+}
+
+.movieItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.buttonGroup {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+.sortButton {
+  background-color: #0d6efd;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
