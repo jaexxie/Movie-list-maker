@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
 import Movie from "./components/movie.js";
 import AddMovie from "./components/addMovie.js"
@@ -7,9 +6,13 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [movie, setMovie] = useState([]);
-
   const [sortAlphaAsc, setSortAlphaAsc] = useState(true);
   const [sortRatingAsc, setSortRatingAsc] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     try {
@@ -59,6 +62,8 @@ export default function Home() {
     });
     setSortRatingAsc(!sortRatingAsc);
   };
+
+  if (!mounted) return null;
 
   return (
     <div className={styles.container}>
